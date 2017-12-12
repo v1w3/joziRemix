@@ -246,29 +246,63 @@ hr {
       font-weight: 800;
   }
   
-  h3 {
+h3 {
       text-align: center;
   }
 
-  .campaign-group {
+.campaign-group {
     display: flex;
     justify-content: space-between;
     margin: 4em 0 0 0;
   }
 
-  h3 i {
+h3 i {
       margin: 0 1em;
   }
 
-  h5 i {
+h5 i {
       margin: 0 0.5em 0 0;
       flex-wrap: nowrap;
   }
 
-  .campaign-item {
+.campaign-item {
       max-width: 25em;
       margin: 1em;
   }
-  .campaign-item p {
+.campaign-item p {
       margin: 1em 1.4em;
   }
+
+.reset {
+      margin: 0;
+      padding: 0;
+  }
+
+.fa-info-circle{
+      margin: 0 0.5em 1em 0.5em;
+  }
+
+.center-text{
+      text-align: center;
+  }
+
+.pnItem  {
+      list-style: none;
+      font-size: 1.2em;
+      padding: 1em 0;
+      border-bottom: 1px solid #ccc;
+  }
+
+.phone {
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0 0 0;
+}
+
+.phone p {
+    margin: 2em 3em 0 0;
+    padding: 0;
+}
+
+
