@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+header {
+    display: inline-flex;
+    font-size: 1.15em;
+    font-weight: 500;
+    width: 100vw;
+    height: 6em;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+
+/* Common styles for all menus */
+.menu {
+	line-height: 1;
+    margin: 0 auto;
+    margin: 0.5em 0 0 7em;
+}
+
+.menu__list {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu__item {
+	display: block;
+	margin: 1em 0;
+}
+
+.menu__link {
+	font-size: 1.05em;
+	font-weight: bold;
+	display: block;
+	padding: 1em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.menu__link:hover,
+.menu__link:focus {
+	outline: none;
+}
+
+.navbar-default {
+    background-color: white;
+}
+
+.menu--shylock .menu__link {
+	position: relative;
+	margin: 0 1em;
+	padding-right: 0;
+	padding-left: 0;
+	color: #000000;
+	-webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.menu--shylock .menu__item--current .menu__link,
+.menu--shylock .menu__item--current .menu__link:hover,
+.menu--shylock .menu__item--current .menu__link:focus {
+	color: #ffc400;
+}
+
+.menu--shylock .menu__item--current .menu__link::after,
+.menu--shylock .menu__item--current .menu__link::before {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+}
+
+.menu--shylock .menu__item--current .menu__link::before {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+
+.menu--shylock .menu__link:hover::before,
+.menu--shylock .menu__link:focus::before {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.menu--shylock .menu__link::before,
+.menu--shylock .menu__link::after {
+	content: '';
+	position: absolute;
+	bottom: 0.5em;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	-webkit-transform: scale3d(0, 1, 1);
+	transform: scale3d(0, 1, 1);
+	-webkit-transform-origin: center left;
+	transform-origin: center left;
+	-webkit-transition: transform 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+	transition: transform 0.2s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.menu--shylock .menu__link::before {
+	background: #ffc400;
+	-webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.menu--shylock .menu__link::after {
+    background: #ffc400;
+}
+
+.social_media {
+    position: fixed;
+    display: block;
+    width: 2em;
+    margin: 3em 2em;
+    z-index: 99;
+}
+
+i {
+    margin: 0.7em 0 0 0;
+}
+
+a {
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: #ffc400;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+main {
+    display: flex;
+    margin: 6em 0;
+}
+
+#ic {
+    margin: 1em 0;
+    width: 175%;
+    padding: 0 1em 0 0;
+} 
+
+.selected h5 {
+    border-left: 3px solid #ffc400;
+    padding: 0 1em;
+}
+
+.carousel-text h5 {
+    max-width: 25em;
+}
+
+.carousel {
+    display: flex;
+    width: 50em;
+    height: 33em;
+    position: relative;
+    margin: 0 0 0 6em;
+}
+
+.carousel-text {
+    padding: 1em;
+    margin: 0 1em 0 0;
+    border-bottom: 1px solid #ccc;
+    max-width: 28em;
+}
+
+hr {
+    background: #ffc400;
+    width: 85%;
+    height: 3px;
+}
+
+.read-more{
+    display: flex;
+    justify-content: space-between;
+}
+
+.marker {
+    width: 3em; 
+    height: 3em; 
+    z-index: 1;
+    position: absolute;
+    background: #ffc400;
+    bottom: 0;
+    right: 0;
+    margin: 0 1em 0 0;
+  }
+
+  .in-the-news {
+      display: flex;
+      align-items: center;
+      width: 25em;
+      position: relative;
+      left: 40%;
+      margin: 0 0 3em 0;
+  }
+
+  .in-the-news h3 {
+      margin: 0.8em 0 0 1em;
+  }
+
+  .news-group {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .news-item {
+      max-width: 30em;
+      margin: 2em 0 0 0;
+  }
+
+  .news-item h5 {
+      color: #ffc400;
+  }
+
+  section {
+      margin: 2em 0;
+  }
+  
